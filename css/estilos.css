@@ -1,0 +1,355 @@
+*{margin: 0; padding: 0; border: 0; box-sizing: border-box;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inconsolata', monospace;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header figure{
+    width: 600px;
+    text-align: left;
+}
+
+header figure img{
+    width: 170px;
+    padding: 10px;
+}
+
+header nav{
+    width: 600px;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    border: 1px solid black;
+    background-color: #e4002b;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 90px;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+header nav ul li a:hover{
+    background-color: white;
+    color: #e4002b;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/* PRINCIPAL_SECTION */
+
+#Inicio{
+    background-image: url("../img/inicial.jpg");
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    padding-top: 80px;
+}
+
+#Inicio h1, #Inicio p{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+
+#Inicio h1{
+    font-size: 60px;
+    width: 750px;
+    margin-bottom: 20px;
+}
+
+#Inicio p{
+    font-size: 20px;
+    width: 600px;
+}
+
+#Inicio a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+#Inicio nav{
+    background-color: rgba(230, 228, 228);
+    border: black solid 1px;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    transition: all 1s;
+}
+#Inicio nav:hover{
+    background-color: rgba(230, 228, 228, 0.5);
+    border: black solid 1px;
+}
+
+/* CATEGORY_SECTION */
+
+#Category {
+    display: flex;
+    justify-content: center;
+}
+
+#Category article{
+    width: 120px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px 10px 0px 10px;
+}
+
+#Category figure img{
+    border-radius: 50%;
+    border: solid grey 1px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+#Category h3{
+    color: rgb(56, 56, 56);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#Category article figure img:hover{
+    border: solid #fc042c 1px;
+}
+
+/* MENU_SECTION */
+
+#menu{
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(4, 276px);
+    grid-template-rows: 50px 330px;
+    justify-content: center;
+}
+#menu p{
+    color: black;
+}
+
+#titleMenu{
+    font-size: 35px;
+    letter-spacing: 7px;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+}
+
+#menuUno{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+#menuUno, #menuDos, #menuTres{
+    width: 250px;
+    text-align: center;
+}
+
+#menuUno img, #menuDos img, #menuTres img{
+    width: 250px;
+}
+
+#menuDos{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+#menuTres{
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+}
+#menuCuatro{
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+    margin-left: 40px;
+}
+#menuCuatro h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+#menuCuatro ul li{
+    font-size: 20px;
+    padding-bottom: 10px;
+    list-style: url("../img/pollo.png");
+    list-style-position: inside;
+}
+
+/* PHOTO_SECTION */
+
+#Photos {
+    display: grid;
+    grid-template-columns: repeat(3, 345px);
+    grid-template-rows: 50px repeat(3, auto);
+    justify-content: center;
+    grid-gap: 20px 35px;
+}
+
+#Photos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Photos h2{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    letter-spacing: 7px;
+    font-size: 35px;
+}
+
+#uno{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+}
+#dos{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+#tres{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+#cuatro{
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 2;
+}
+
+/* FORM_SECTION */
+
+#form{
+    background-color: #e4002b;
+    display: grid;
+    grid-template-columns: 200px repeat(2, 450px);
+    grid-gap: 27px;
+    justify-content: center;
+}
+
+#formUno{
+    grid-column: 1 / span 1;
+    letter-spacing: 7px;
+    text-align: left;
+    font-size: 35px;
+    color: white;
+}
+#formDos{
+    grid-column: 2 / span 1;
+}
+#formTres{
+    grid-column: 3 / span 1;
+    width: 405px;
+}
+
+#formUno, #formDos, #formTres{
+    margin: 20px;
+}
+
+.campos{
+    display: block;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 40px;
+}
+
+input[type="submit"]{
+    display: block;
+    margin: 0 320px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 1s;
+}
+input[type="submit"]:hover{
+    background-color: rgba(232, 232, 232, 0.1);
+    color: white;
+    border: white solid 1px;
+}
+
+textarea{
+    width: 400px;
+    height: 70px;
+    resize: none;
+}
+
+.campos, textarea{
+    border: 2px white solid;
+    padding-left: 5px;
+    background-color: #e4002b;
+    color: white;
+    transition: all 1s;
+}
+
+.campos::placeholder, textarea::placeholder{
+    color: white;
+}
+
+.campos:focus::placeholder, textarea:focus::placeholder{
+    color: #e4002b;
+}
+
+.campos:focus, textarea:focus{
+    background-color: white;
+    color: #e4002b;
+}
+
+/* FOOTER_SECTION */
+#footer{
+    margin: 20px;
+}
+
+#footer p{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#footer ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 5px;
+}
+
+#footer li{
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/iconos.png");
+    background-repeat: no-repeat;
+    margin: 2px;
+}
+
+#Face{
+    background-position: 0 0;
+}
+#Face:hover{
+    background-position: 0 -32px;
+}
+
+#tw{
+    background-position: -32px 0px;
+}
+#tw:hover{
+    background-position: -32px -32px;
+}
